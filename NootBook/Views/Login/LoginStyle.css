@@ -1,0 +1,172 @@
+﻿:root {
+    --bg: #FEFFDE;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.Gambar img {
+    animation: move-in 0.5s ease-in, Gambar 2s infinite 1s;
+}
+
+@keyframes Gambar {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes move-in {
+    from {
+        transform: translateY(-100vh)
+    }
+
+    to {
+        transform: translateY(-0vh)
+    }
+}
+
+.Gambar img.move-out {
+    animation: move-out 0.5s ease-out forwards;
+}
+
+@keyframes move-out {
+    0% {
+        transform: translateY(-0vh)
+    }
+
+    100% {
+        transform: translateY(-100vh)
+    }
+}
+
+.fade-out {
+    animation: pageTransisi 0.5s ease-out forwards;
+}
+
+@keyframes pageTransisi {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+    .login .TEXT {
+        margin-top: 1%;
+        font-size: 2.5rem;
+        display: block;
+        text-align: center;
+    }
+
+h1.Firsttext {
+    margin-bottom: 0px;
+}
+
+h1.Secondtext {
+    margin-top: 0px;
+}
+
+.login .Gambar img {
+    margin-bottom: -50px;
+    margin-top: 30px;
+    width: 220px;
+    height: 182px;
+}
+
+.login h1 {
+    font-family: 'Unica One', sans-serif;
+}
+
+.login form {
+    padding: 3% 5% 2% 5%;
+    border: 5px solid #52734D;
+    border-radius: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1.5%;
+}
+
+.login .Form-Group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+    color: #52734D;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+    .login
+    .Form-Group input[type="email"],
+    .Form-Group input[type="password"] {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        border-radius: 30px;
+        background-color: #91C788;
+        border: none;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        width: 500px;
+        font-size: 1.5rem;
+    }
+
+.buttoncontainer {
+    margin-top: -15px;
+}
+
+.Forgot {
+    margin-top: -2rem;
+    padding-bottom: 2rem;
+    padding-left: 24rem;
+}
+
+.Fbut {
+    border: none;
+    cursor: pointer;
+    color: #52734D;
+    background-color: #FEFFDE;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
+
+.signin-button, .signup-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    cursor: pointer;
+    color: #52734D;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.separator {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-right: 10px;
+}
+
+.signin-button:hover, .signup-button:hover, .Fbut:hover {
+    color: #91C788;
+}
