@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="NootBook.Views.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>NavBar&Dashboard</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css”/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <!-- css -->
+    <link href="../CSS/MasterCSS.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <!-- <div class="text">
+                <a class="logo" href="#">
+                    <img src="../Pitcure/Logo.png" width="55" height="48"/>     
+                </a>
+                <span>NOOTBOOK</span>
+            </div> -->
+            <a href="#" class="logo">
+                <img src="../Picture/Logo%20Image.png" width="186" height="48"/>
+            </a>
+
+            <div class="searchbar">
+                <a href="#"><i class="icon" data-feather="search"></i></a>
+                <input type="search" placeholder="Search your note...">
+            </div>
+
+            <div class="profile">
+                <div class="ProfileImg">
+                    <img src="../Picture/Profile%20Picture.jpeg" />
+                </div>
+                <div class="profileTxt">
+                    <div class="Name-prof">
+                        <asp:Label ID="ProfileName" runat="server" Text="SAPI DERMEN"></asp:Label>
+                        <i class="bi bi-pencil-square"></i>
+                    </div>
+                    <i class="bi bi-gem"></i>
+                </div>               
+            </div>
+        </nav>
+
+        <section class="dashboard">
+            <div class="sidebar">
+                <p>Workspace</p>
+                <div class="workspace">
+                    <img class="wspicture" src="../Picture/WorkSpace%20Picture.jpeg" />
+                    <p>2024/04/24 || GoogleDrive</p>
+                    <h2>Workspace_1</h2>
+                </div>
+
+                <section class="sidebar-menu">
+                    <div class="main">
+                        <div class="document">
+                            <a href="#" class="allDocument"><i class="bi bi-folder-fill"></i>All Document</a>
+                        </div>
+                         <div class="journal">
+                            <a href="#" class="journals"><i class="bi bi-calendar-fill"></i>Journals</a>
+                        </div>                       
+                        <div class="setting">
+                            <a href="#" class="settings"><i class="bi bi-gear-fill"></i>Settings</a>
+                        </div>
+                        <div class="sticky-note">
+                            <a href="#" class="stickyNotes"><i class="bi bi-stickies-fill"></i>Sticky Notes</a>
+                        </div>
+                    </div>
+
+                    <div class="favorites">
+                        <div class="header">
+                            <p>Favorites</p>
+                            <i data-feather="plus" class="iconplus"></i>
+                        </div>
+                        <div class="favorites-note">
+                            <a href="#" class="extractMethod"><i class="bi bi-file-earmark-text-fill"></i>Extract Method</a>
+                            <a href="#" class="goldenRules"><i class="bi bi-file-earmark-text-fill"></i>Golden Rules</a>
+                        </div>
+                    </div>
+
+                    <div class ="collections">
+                        <div class="header">
+                            <p>Collections</p>
+                            <i data-feather="plus" class="iconplus"></i>
+                        </div>
+                        <div class="collections-note">
+                            <a href="#" class="softwareEngineering"><i class="bi bi-caret-right-fill" style="color: black; font-size: 0.7rem; margin-right: 0.4rem;"></i><i class="bi bi-folder-symlink-fill" style="color: black; font-size: 1.4rem; margin-right: 0.5rem;"></i>Software Engineering</a>
+                            <a href="#" class="codeReengineering"><i class="bi bi-caret-right-fill" style="color: black; font-size: 0.7rem; margin-right: 0.4rem;"></i><i class="bi bi-folder-symlink-fill" style="color: black; font-size: 1.4rem; margin-right: 0.5rem;"></i>Code Reengineering</a>
+                            <a href="#" class="patternSoftwareDesign"><i class="bi bi-caret-right-fill" style="color: black; font-size: 0.7rem; margin-right: 0.4rem;"></i><i class="bi bi-folder-symlink-fill" style="color: black; font-size: 1.4rem; margin-right: 0.5rem;"></i>Pattern Software Design</a>
+                            <a href="#" class="computationalBiology"><i class="bi bi-caret-right-fill" style="color: black; font-size: 0.7rem; margin-right: 0.4rem;"></i><i class="bi bi-folder-symlink-fill" style="color: black; font-size: 1.4rem; margin-right: 0.5rem;"></i>computational Biology</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <footer class="dashboardBtn">   
+            <button class="btn"><i class="bi bi-plus-lg"></i>New Doc</button>
+            <button class="btn"><i class="bi bi-box-arrow-in-right"></i>New Doc</button>
+        </footer>
+
+        <div class="content">           
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
