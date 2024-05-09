@@ -67,6 +67,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Views\Home\HomePage.aspx" />
+    <Content Include="Views\Master\MasterCss.css" />
+    <Content Include="Picture\Logo Image.png" />
+    <Content Include="Picture\Profile Picture.jpeg" />
+    <Content Include="Picture\WorkSpace Picture.jpeg" />
     <Content Include="Views\Booting\Booting.aspx" />
     <Content Include="Views\Booting\LOGOLG-removebg-preview.png" />
     <Content Include="Views\Booting\StyleBooting.css" />
@@ -88,12 +93,26 @@
     <Compile Include="Views\Booting\Booting.aspx.designer.cs">
       <DependentUpon>Booting.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Home\HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Home\HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Login\LoginForm.aspx.cs">
       <DependentUpon>LoginForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Login\LoginForm.aspx.designer.cs">
       <DependentUpon>LoginForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Views\Register\RegisterForm.aspx.cs">
       <DependentUpon>RegisterForm.aspx</DependentUpon>
@@ -105,7 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Views\Site1.Master" />
+    <Content Include="Views\Master\MasterPage.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

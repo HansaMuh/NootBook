@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace NootBook.Views
+namespace NootBook.Views.Home
 {
 
 

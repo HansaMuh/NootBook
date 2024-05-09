@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace NootBook.Views
+namespace NootBook.Views.Master
 {
 
 
-    public partial class Site1
+    public partial class MasterPage
     {
 
         /// <summary>

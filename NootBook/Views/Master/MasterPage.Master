@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="NootBook.Views.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="NootBook.Views.Master.MasterPage" %>
 
 <!DOCTYPE html>
 
@@ -14,7 +14,7 @@
     <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css”/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
     <!-- css -->
-    <link href="../CSS/MasterCSS.css" rel="stylesheet" />
+    <link href="MasterCss.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -27,7 +27,7 @@
                 <span>NOOTBOOK</span>
             </div> -->
             <a href="#" class="logo">
-                <img src="../Picture/Logo%20Image.png" width="186" height="48"/>
+                <img src="../../Picture/Logo%20Image.png" width="186" height="48"/>
             </a>
 
             <div class="searchbar">
@@ -37,7 +37,7 @@
 
             <div class="profile">
                 <div class="ProfileImg">
-                    <img src="../Picture/Profile%20Picture.jpeg" />
+                    <img src="../../Picture/Profile%20Picture.jpeg"/>
                 </div>
                 <div class="profileTxt">
                     <div class="Name-prof">
@@ -53,8 +53,7 @@
             <div class="sidebar">
                 <p>Workspace</p>
                 <div class="workspace">
-                    <img class="wspicture" src="../Picture/WorkSpace%20Picture.jpeg" />
-                    <p>2024/04/24 || GoogleDrive</p>
+                    <img class="wspicture" src="../../Picture/WorkSpace%20Picture.jpeg" />
                     <h2>Workspace_1</h2>
                 </div>
 
