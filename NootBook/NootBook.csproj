@@ -86,6 +86,9 @@
     <Content Include="Views\Register\LOGOLG-removebg-preview.png" />
     <Content Include="Views\Register\RegisterForm.aspx" />
     <Content Include="Views\Register\StyleRegis.css" />
+    <Content Include="Views\StickyPage\StickyNotesPage.aspx" />
+    <Content Include="Views\StickyPage\StickyScript.js" />
+    <Content Include="Views\StickyPage\StickyStyle.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +141,13 @@
     </Compile>
     <Compile Include="Views\Register\RegisterForm.aspx.designer.cs">
       <DependentUpon>RegisterForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StickyPage\StickyNotesPage.aspx.cs">
+      <DependentUpon>StickyNotesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\StickyPage\StickyNotesPage.aspx.designer.cs">
+      <DependentUpon>StickyNotesPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
