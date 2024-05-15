@@ -1,0 +1,91 @@
+﻿body {
+    font-family: "Poppins", sans-serif;
+    overflow-y: hidden;
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.5rem;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.intro h1 {
+    font-weight: 700;
+}
+
+.pendahuluan {
+    font-weight: 700;
+    padding: 1.5rem 3%;
+    text-align: center;
+}
+
+.intro img {
+    margin: 3rem;
+    width: 10rem;
+    height: 8.5rem
+}
+
+.awal {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.awal p {
+    font-style: italic;
+    font-weight: lighter;
+    padding-bottom: 1.5rem;
+}
+
+.button-awal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.doc {
+    color: black;
+    padding-top: 0.7rem;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    font-style: italic;
+    background-color: #91C788;
+    width: 7rem;
+    height: 2.3rem;
+    border-radius: 90px 0px 0px 90px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.jurnal {
+    font-size: 1rem;
+    cursor: pointer;
+    font-style: italic;
+    background-color: #91C788;
+    width: 8rem;
+    height: 2.3rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sticky {
+    color: black;
+    text-align: center;
+    padding-top: 0.7rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-style: italic;
+    background-color: #91C788;
+    width: 7rem;
+    height: 2.3rem;
+    border-radius: 0px 90px 90px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
