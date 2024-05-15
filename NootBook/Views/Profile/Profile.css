@@ -1,0 +1,96 @@
+﻿body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.containerP {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profileP {
+    display:flex;
+    background-color: #DCFCBD;
+    width: 57rem;
+    height: 37rem;
+    border-radius: 27px;
+    box-shadow: 4px 4px 22px #d1d1d1;
+}
+
+.prof-left {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+    
+}
+
+.profileImgP {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEFFE5;
+    width: 23rem;
+    height: 27rem;
+    border-radius: 27px;
+    box-shadow: 1px 1px 10px #808080;
+
+}
+
+.profileImgP img {
+    width: 17rem;
+    height: 17rem;
+    border-radius: 100%;
+    border: 2.5px solid black;
+    margin-bottom: 1.5rem;
+}
+
+.profileImgP .chooseBtn {
+    background-color: #52734D;
+    color: #FEFFDE;
+    border-radius: 27px;
+    width: 19.75rem;
+    height: 3rem;
+    font-size: 1.25rem;
+}
+
+.profileInfoP {
+    margin: 7rem 2rem 5rem 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.profileInfoP h2 {
+    font-style: italic;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.Name-prof, .Age-prof, .Phone-prof, .Email-prof {
+    display: flex;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.prof-left {
+    display: flex;
+    flex-direction: column;
+    width: 23rem;
+}
+
+.profile-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botBtn {
+    background-color: #52734D;
+    color: #FEFFDE;
+    border-radius: 27px;
+    width: 19.75rem;
+    height: 3rem;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}

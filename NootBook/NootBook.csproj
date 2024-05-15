@@ -79,6 +79,10 @@
     <Content Include="Views\Login\LoginForm.aspx" />
     <Content Include="Views\Login\LoginStyle.css" />
     <Content Include="Views\Login\LOGOLG-removebg-preview.png" />
+    <Content Include="Views\Profile\Profile.aspx" />
+    <Content Include="Views\Profile\Profile.css" />
+    <Content Include="Views\Project Page\ProjectPage.aspx" />
+    <Content Include="Views\Project Page\ProjectPage.css" />
     <Content Include="Views\Register\LOGOLG-removebg-preview.png" />
     <Content Include="Views\Register\RegisterForm.aspx" />
     <Content Include="Views\Register\StyleRegis.css" />
@@ -113,6 +117,20 @@
     </Compile>
     <Compile Include="Views\Master\MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Profile\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Profile\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Project Page\ProjectPage.aspx.cs">
+      <DependentUpon>ProjectPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Project Page\ProjectPage.aspx.designer.cs">
+      <DependentUpon>ProjectPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Register\RegisterForm.aspx.cs">
       <DependentUpon>RegisterForm.aspx</DependentUpon>
