@@ -33,6 +33,15 @@ namespace NootBook.Views.Document_Page
         protected global::System.Web.UI.WebControls.Label note;
 
         /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
+
+        /// <summary>
         /// CreateDate control.
         /// </summary>
         /// <remarks>
@@ -51,31 +60,22 @@ namespace NootBook.Views.Document_Page
         protected global::System.Web.UI.WebControls.Label UpdateDate;
 
         /// <summary>
-        /// note2 control.
+        /// Label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label note2;
+        protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// CreateDate2 control.
+        /// Label3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label CreateDate2;
-
-        /// <summary>
-        /// UpdateDate2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label UpdateDate2;
+        protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
         /// note3 control.
@@ -103,68 +103,5 @@ namespace NootBook.Views.Document_Page
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label UpdateDate3;
-
-        /// <summary>
-        /// KURSOR control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button KURSOR;
-
-        /// <summary>
-        /// TEXTBOX control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button TEXTBOX;
-
-        /// <summary>
-        /// PENCIL control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button PENCIL;
-
-        /// <summary>
-        /// ERESER control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ERESER;
-
-        /// <summary>
-        /// CUT control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CUT;
-
-        /// <summary>
-        /// STICKER control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button STICKER;
-
-        /// <summary>
-        /// SHAPE control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SHAPE;
     }
 }
