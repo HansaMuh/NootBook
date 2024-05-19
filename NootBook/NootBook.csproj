@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Views\Document Page\DocumentPage.aspx" />
+    <Content Include="Views\Document Page\DocumentPage.css" />
     <Content Include="Views\Home\HomePage.aspx" />
     <Content Include="Views\IntroductionPage\IntroductionPage.aspx" />
     <Content Include="Views\IntroductionPage\IntroductionStyle.css" />
@@ -85,6 +87,8 @@
     <Content Include="Views\Profile\Profile.css" />
     <Content Include="Views\Project Page\ProjectPage.aspx" />
     <Content Include="Views\Project Page\ProjectPage.css" />
+    <Content Include="Views\Projek Kelompok 6\ProjekKel6.aspx" />
+    <Content Include="Views\Projek Kelompok 6\ProjekKel6.css" />
     <Content Include="Views\Register\LOGOLG-removebg-preview.png" />
     <Content Include="Views\Register\RegisterForm.aspx" />
     <Content Include="Views\Register\StyleRegis.css" />
@@ -101,6 +105,13 @@
     </Compile>
     <Compile Include="Views\Booting\Booting.aspx.designer.cs">
       <DependentUpon>Booting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Document Page\DocumentPage.aspx.cs">
+      <DependentUpon>DocumentPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Document Page\DocumentPage.aspx.designer.cs">
+      <DependentUpon>DocumentPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Home\HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
@@ -143,6 +154,13 @@
     </Compile>
     <Compile Include="Views\Project Page\ProjectPage.aspx.designer.cs">
       <DependentUpon>ProjectPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Projek Kelompok 6\ProjekKel6.aspx.cs">
+      <DependentUpon>ProjekKel6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Projek Kelompok 6\ProjekKel6.aspx.designer.cs">
+      <DependentUpon>ProjekKel6.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Register\RegisterForm.aspx.cs">
       <DependentUpon>RegisterForm.aspx</DependentUpon>

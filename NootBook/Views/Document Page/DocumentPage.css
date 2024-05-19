@@ -1,0 +1,182 @@
+﻿body {
+    font-family: "Poppins", sans-serif;
+    overflow-y: hidden;
+}
+
+/*Title Section*/
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-nav h1 {
+    color: #a3a3a3;
+    font-size: 2.5rem;
+}
+
+.addBtn {
+    background-color: #52734D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 3.25rem;
+    height: 3.25rem;
+    border: 3px solid white;
+    box-shadow: 3px 3px 5px #808080;
+}
+
+.addBtn .addDoc {
+    color: #FEFFDE;
+}
+
+.mini-nav {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mini-nav .miniLeft {
+    color: #D4E7C5;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;    
+    font-weight: 600;
+}
+
+.mini-nav .miniLeft i {
+    color: black;
+    font-size: 2rem;
+    -webkit-text-stroke: 2px;
+}
+
+.mini-nav .miniRight {
+    color: #D4E7C5;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 600;
+}
+
+.doc-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.docDate {
+    font-size: 1.25rem;
+    color: #D4E7C5;
+    margin-bottom: 1rem;
+}
+
+.doc-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.doc-item-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.doc-item a {
+    color: #52734D;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+
+.doc-item-mini {
+    color: #91C788;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.doc-item i {
+    font-size: 2rem;
+}
+
+.doc-item-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.doc-item-tag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.tag-name {
+    padding: 0 5px;
+    background-color: #D4E7C5;
+    color: #52734D;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0px 1px 3px 1px grey inset;
+}
+
+.doc-item-tag i {
+    color: orangered;
+    font-size: 2rem;
+    justify-content: center;
+    margin-bottom: -0.7rem;
+    margin-top: -1rem;
+}
+
+.garis {
+    margin-top: 1rem;
+    border-top: 1px solid #000;
+    height: 1%;
+    width: 100%;
+}
+
+.garis2 {
+    margin-top: 0.5rem;
+    border-top: 1px solid #000;
+    height: 1%;
+    width: 45%;
+    text-align: center;
+}
+
+/*ToolBox*/
+
+.tools {
+    display: flex;
+    flex-direction: column;
+}
+
+.ToolBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+    border: 1px solid blaCK;
+    padding: 0.8rem 0.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    position: fixed;
+    top: 23rem;
+    right: -2.8px;
+    z-index: 99999;
+}
