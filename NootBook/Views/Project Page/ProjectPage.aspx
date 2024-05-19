@@ -9,11 +9,10 @@
         <section class="hero">
             <div class="doc-nav">
                 <div class="header-doc">
-                    <input class="doc-folder" type="text" placeholder="Software Engineering /"/>
-                    <input class="name-folder" type="text" placeholder="Projek Kelompok 6"/>
+                    <input class="doc-folder" type="text" placeholder="Folder"/>
                 </div>
                 <div class="header-doc2">
-                    <p>edited Mar 4</p>
+                    <p>edited</p>
                     <asp:Button Id="share" runat="server" class="header2-share" data-feather="share-2" />
                     <asp:Button ID="favorite" runat="server" class="header2-favorite" data-feather="star" />
                 </div>
@@ -21,7 +20,7 @@
             <div class="garis">
             </div>
             <div class="judul">
-                <input class="doc-title" type="text" placeholder="NootBook"/>
+                <input class="doc-title" type="text" placeholder="Untitled"/>
                 <div class="garis2"></div>
             </div>
 

@@ -32,7 +32,7 @@
 
             <div class="searchbar">
                 <a href="#"><i class="icon" data-feather="search"></i></a>
-                <input type="search" placeholder="Search your note...">
+                <input type="search" placeholder="Search your note..."/>
             </div>
 
             <div class="profile">
