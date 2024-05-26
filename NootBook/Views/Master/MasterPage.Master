@@ -102,16 +102,48 @@
 
         <footer class="dashboardBtn">   
             <button class="btn"><i class="bi bi-plus-lg"></i>New Doc</button>
-            <button class="btn"><i class="bi bi-box-arrow-in-right"></i>New Doc</button>
+            <button class="btn" type="button" onclick="openPopup()"><i class="bi bi-box-arrow-in-right"></i>New Doc</button>
         </footer>
 
         <div class="content">           
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+
+        <div class="popup" id="popup">
+            <div class="popup-top">
+                <h2>Import File</h2>
+                <button class="closeBtn" type="button" onclick="closePopup()">x</button>
+            </div>
+            
+            <div class="popup-nav">
+                <span>Recent</span>
+                <span>My Drive</span>
+                <span>Computers</span>
+                <span>Uploud</span>
+            </div>
+            <div class="popup-garis">
+            </div>
+            <div class="drop">
+                <i class="bi bi-cloud-fill"></i>
+                <asp:Button ID="BrowseBtn" CssClass="popupBtn" runat="server" Text="Browse" />
+                <p>or drag a file here</p>
+            </div>
+        </div>
     </form>
 
     <script>
+        let popup = document.getElementById('popup');
+        let
+
+        function openPopup() {
+            popup.classList.add("open-popup")
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup")
+        }
+
         feather.replace();
     </script>
 </body>
