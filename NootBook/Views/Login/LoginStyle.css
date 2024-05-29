@@ -69,12 +69,12 @@ body {
     align-items: center;
 }
 
-    .login .TEXT {
-        margin-top: 1%;
-        font-size: 2.5rem;
-        display: block;
-        text-align: center;
-    }
+.login .TEXT {
+    margin-top: 1%;
+    font-size: 2.5rem;
+    display: block;
+    text-align: center;
+}
 
 h1.Firsttext {
     margin-bottom: 0px;
@@ -117,19 +117,16 @@ h1.Secondtext {
     align-items: center;
 }
 
-    .login
-    .Form-Group input[type="email"],
-    .Form-Group input[type="password"] {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        border-radius: 30px;
-        background-color: #91C788;
-        border: none;
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
-        width: 500px;
-        font-size: 1.5rem;
-    }
+.login
+.Form-Group input[type="email"],
+.Form-Group input[type="password"] {
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    background-color: #91C788;
+    border: none;
+    width: 500px;
+    font-size: 1.5rem;
+}
 
 .buttoncontainer {
     margin-top: -15px;
