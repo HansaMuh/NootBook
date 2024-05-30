@@ -1,0 +1,187 @@
+﻿* {
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+:root {
+    --main: #FEFFDE;
+    --button: #91c788;
+    --lighter-button: #668F60;
+    --darker-button: #476442;
+    --side: #9ACF91;
+    /*    --font: #91C788;*/
+    --font: #121212;
+    --separator: #DBDBDB;
+}
+
+body {
+    /*    font-family: "Poppins", sans-serif;*/
+    font-family: Inter,Roboto,Helvetica,Arial,sans-serif;
+    padding-top: 65px;
+    height: 100%;
+    margin: 0;
+}
+
+.Main-Content {
+    height: calc(100vh - (65px + 105px));
+    padding-bottom: 105px; /* Not sure why the FUCK I should do this one */
+}
+
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1rem 1.5rem;
+    background-color: var(--main);
+    border-bottom: 1px solid var(--separator);
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    z-index: 1000;
+}
+
+.NavBar-Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.NavBar-Menu-List-Left {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.NavBar-Menu-List-Right {
+    display: flex;
+    align-items:end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 1rem;
+}
+
+.NavBar-Menu-Item,
+.NavBar-Menu-Item-Special {
+    margin-left: 1rem;
+}
+
+.NavBar-Menu-Link {
+    color: var(--font);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0.5rem 1.25rem;
+    border-radius: 7.5px;
+}
+
+.NavBar-Menu-Image {
+    height: 30px;
+}
+
+.NavBar-Menu-Item-Special a {
+    background-color: var(--button);
+    color: var(--main);
+    padding: 0.5rem 1.25rem;
+    border-radius: 30px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.NavBar-Menu-Item a:hover {
+    border-color: rgba(0, 0, 0, 0.25);
+    color: var(--font);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.NavBar-Menu-Item-Special a:hover {
+    background-color: var(--lighter-button);
+}
+
+.NavBar-Menu-Item-Special a:active {
+    background-color: var(--darker-button);
+}
+
+.Footer-Nav {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 105px;
+    background-color: var(--main);
+    border-top: 1px solid var(--separator);
+    padding: 2rem 2.5rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Footer-Nav-Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.Footer-Nav-Logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 1rem;
+}
+
+.Footer-Nav-Logo-Image {
+    height: 40px;
+}
+
+.Footer-Nav-Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.Footer-Nav-Links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Footer-Nav-Link-Item {
+    margin-right: 2rem;
+}
+
+.Footer-Nav-Link-Item a {
+    font-weight: 600;
+    color: var(--font);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.Footer-Nav-Link-Item a:hover {
+    color: var(--button);
+}
+
+.Footer-Nav-Extra {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end; 
+}
+
+.Footer-Nav-Extra h1 {
+    font-style: italic;
+    font-size: 1rem;
+    text-align: end;
+    margin-bottom: 0;
+}

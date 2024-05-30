@@ -65,6 +65,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Pages\Dummy.aspx" />
+    <Content Include="Pages\Images\NootBook.png" />
+    <Content Include="Pages\Styles\Home.Master.css" />
     <Content Include="Views\Document Page\DocumentPage.aspx" />
     <Content Include="Views\Document Page\DocumentPage.css" />
     <Content Include="Views\Home\HomePage.aspx" />
@@ -96,6 +99,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\Dummy.aspx.cs">
+      <DependentUpon>Dummy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dummy.aspx.designer.cs">
+      <DependentUpon>Dummy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Master\Home.Master.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Master\Home.Master.designer.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\Booting\Booting.aspx.cs">
       <DependentUpon>Booting.aspx</DependentUpon>
@@ -178,6 +195,7 @@
   <ItemGroup>
     <Content Include="Views\Master\MasterPage.Master" />
     <None Include="packages.config" />
+    <Content Include="Pages\Master\Home.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -185,7 +203,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Pages\Javascripts\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
