@@ -1,0 +1,94 @@
+﻿:root {
+    --main-content: #FEFFE5;
+    --button: #91C788;
+    --lighter-button: #668F60;
+    --darker-button: #476442;
+    --side: #9ACF91;
+    --font: #121212;
+    --separator: #DBDBDB;
+}
+
+body {
+    font-family: Inter, Roboto, Helvetica, Arial, sans-serif;
+    height: 100%;
+}
+
+.Introduction-Section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - (65px + 105px));
+    background-color: var(--main-content);
+}
+
+.Introduction-Section-Background {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - (65px + 105px));
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Introduction-Section-Image {
+    visibility: visible;
+    position: absolute;
+    height: 75%;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+.Introduction-Section-Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+    gap: 0.75rem;
+}
+
+.Introduction-Section-Content-Caption {
+    margin-top: 0;
+    width: 80%;
+    font-size: calc(2rem + 1.5vw);
+    font-weight: 600;
+}
+
+
+.Introduction-Section-Content-Description {
+    margin-bottom: 1.5rem;
+    width: 65%;
+    font-size: 1.25rem;
+}
+
+.Introduction-Section-Button a {
+    background-color: var(--button);
+    color: var(--main-content);
+    padding: 0.75rem 2.5rem;
+    border-radius: 30px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.Introduction-Section-Button-Link {
+    margin-top: auto;
+    color: var(--font);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0.5rem 1.25rem;
+    border-radius: 7.5px;
+}
+
+.Introduction-Section-Button a:hover {
+    color: var(--main-content);
+    background-color: var(--lighter-button);
+}
+
+.Introduction-Section-Button a:active {
+    background-color: var(--darker-button);
+}

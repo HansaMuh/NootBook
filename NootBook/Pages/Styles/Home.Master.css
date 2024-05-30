@@ -1,13 +1,6 @@
-﻿* {
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-}
-
-:root {
+﻿:root {
     --main: #FEFFDE;
-    --button: #91c788;
+    --button: #91C788;
     --lighter-button: #668F60;
     --darker-button: #476442;
     --side: #9ACF91;
@@ -16,9 +9,16 @@
     --separator: #DBDBDB;
 }
 
+* {
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
 body {
     /*    font-family: "Poppins", sans-serif;*/
-    font-family: Inter,Roboto,Helvetica,Arial,sans-serif;
+    font-family: Inter, Roboto, Helvetica, Arial, sans-serif;
     padding-top: 65px;
     height: 100%;
     margin: 0;
@@ -26,7 +26,7 @@ body {
 
 .Main-Content {
     height: calc(100vh - (65px + 105px));
-    padding-bottom: 105px; /* Not sure why the FUCK I should do this one */
+    padding-bottom: 105px; /* Not sure why the FUCK I did this one */
 }
 
 .NavBar {
