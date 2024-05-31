@@ -4,7 +4,7 @@
     public enum UserRoleType
     {
         Guest,
-        User,
+        Author,
         Administrator
     }
 
