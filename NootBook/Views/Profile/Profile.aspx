@@ -28,7 +28,7 @@
 
             <div class="profileInfoP">
                 <h2>Information</h2>
-                <div class="Name-prof"">
+                <div class="Nama-prof">
                    <span>name</span>
                    <span>:</span>
                    <asp:Label ID="Label1" runat="server" Text="Sapi Dermen"></asp:Label>
