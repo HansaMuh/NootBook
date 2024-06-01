@@ -1,0 +1,147 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Workspace.master.cs" Inherits="NootBook.Pages.Master.Workspace" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Workspace | NootBook</title>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" />
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="../Styles/Workspace.Master.css" />
+</head>
+<body>
+    <form id="Form_Main" runat="server">
+        <!-- Header -->
+        <nav class="NavBar">
+            <div class="NavBar-Container">
+                <!-- Left side -->
+                <ul class="NavBar-Menu-List-Left">
+                    <li class="NavBar-Menu-Item">
+                        <button id="BtnDashboard" class="Dashboard-Sidebar-Menu-Button">
+                            <i data-feather="sidebar" class="Dashboard-Sidebar-Menu-Button-Icon"></i>
+                        </button>
+                    </li>
+                    <li class="NavBar-Menu-Item-Image"><a href="#" class="NavBar-Menu-Link"><asp:Image runat="server" ImageUrl="../Images/NootBook.png" alt="NootBook Logo" class="NavBar-Menu-Image" /></a></li>
+<!--                    <li class="NavBar-Menu-Item" style="display: none;"><a href="../About.aspx" class="NavBar-Menu-Link">About</a></li> -->
+                </ul>
+                <!-- Middle side -->
+                <div class="NavBar-Menu-Search">
+                    <button type="button" class="NavBar-Menu-Search-Button"><i data-feather="search" class="NavBar-Menu-Search-Button-Icon"></i></button>
+                    <input id="TxtSearch" class="NavBar-Menu-Search-Input" placeholder="Search documents and actions..." />
+                    <button type="button" class="NavBar-Menu-Search-Button"><i data-feather="x" class="NavBar-Menu-Search-Button-Icon"></i></button>
+                </div>
+                <!-- Right side -->
+                <ul class="NavBar-Menu-List-Right">
+                    <li id="BtnProfile" class="NavBar-Menu-Item-Special-Text">
+                        <span>Welcome,</span>
+                        <span id="TxtProfileName">Guest!</span>
+                    </li>
+                    <li class="NavBar-Menu-Item-Special" style="display: none;"><a href="../Login.aspx" class="NavBar-Menu-Link">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Content Sections -->
+        <div class="Content-Sections">
+            <!-- Dashboard -->
+            <section class="Dashboard">
+                <!-- Sidebar -->
+                <div class="Dashboard-Sidebar">
+                    <!-- Header Buttons -->
+                    <!--<div class="Dashboard-Sidebar-Buttons">
+                        <button id="BtnDashboard" class="Dashboard-Sidebar-Menu-Button">
+                            <i data-feather="sidebar" class="Dashboard-Sidebar-Menu-Button-Icon"></i>
+                        </button>
+                    </div>-->
+                    <!-- Menu -->
+                    <ul class="Dashboard-Sidebar-Menu">
+                        <li class="Dashboard-Sidebar-Menu-Item">
+                            <button class="Dashboard-Sidebar-Menu-Item-Button">
+                                <i data-feather="book" class="Dashboard-Sidebar-Menu-Item-Icon"></i>
+                            </button>
+                            <a href="../Documents.aspx" class="Dashboard-Sidebar-Menu-Item-Link">All documents</a>
+                        </li>
+                        <li class="Dashboard-Sidebar-Menu-Item">
+                            <button class="Dashboard-Sidebar-Menu-Item-Button">
+                                <i data-feather="folder" class="Dashboard-Sidebar-Menu-Item-Icon"></i>
+                            </button>
+                            <a href="../Folders.aspx" class="Dashboard-Sidebar-Menu-Item-Link">All folders</a>
+                        </li> 
+                        <li class="Dashboard-Sidebar-Menu-Item">
+                            <button class="Dashboard-Sidebar-Menu-Item-Button">
+                                <i data-feather="trash-2" class="Dashboard-Sidebar-Menu-Item-Icon"></i>
+                            </button>
+                            <a href="../Trash.aspx" class="Dashboard-Sidebar-Menu-Item-Link">Trash</a>
+                        </li> 
+                    </ul>
+                    <!-- Favorites -->
+                    <div class="Dashboard-Sidebar-Favorites">
+                        <div class="Dashboard-Sidebar-Favorites-Title">
+                            <h2 class="Dashboard-Sidebar-Favorites-Title-Text">Favorites</h2>
+                            <button id="BtnFavorites" class="Dashboard-Sidebar-Favorites-Title-Button">
+                                <i data-feather="plus" class="Dashboard-Sidebar-Favorites-Title-Icon"></i>
+                            </button>
+                        </div>
+                        <ul class="Dashboard-Sidebar-Favorites-List">
+                            <li class="Dashboard-Sidebar-Favorites-Item">
+                                <i data-feather="clipboard" class="Dashboard-Sidebar-Favorites-Item-Icon"></i>
+                                <a href="#" class="Dashboard-Sidebar-Favorites-Item-Link">Document 1</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Folders -->
+                    <div class="Dashboard-Sidebar-Folders">
+                        <div class="Dashboard-Sidebar-Folders-Title">
+                            <h2 class="Dashboard-Sidebar-Folders-Title-Text">Folders</h2>
+                            <button id="BtnFolders" class="Dashboard-Sidebar-Folders-Title-Button">
+                                <i data-feather="plus" class="Dashboard-Sidebar-Folders-Title-Icon"></i>
+                            </button>
+                        </div>
+                        <ul class="Dashboard-Sidebar-Folders-List">
+                            <li class="Dashboard-Sidebar-Folders-Item">
+                                <i data-feather="chevron-right" class="Dashboard-Sidebar-Folders-Item-Chevron"></i>
+                                <i data-feather="inbox" class="Dashboard-Sidebar-Folders-Item-Icon"></i>
+                                <a href="#" class="Dashboard-Sidebar-Folders-Item-Link">Folder 1</a>
+                                <ul class="Dashboard-Sidebar-Folders-Item-Documents">
+                                    <li class="Dashboard-Sidebar-Folders-Item-Documents-Item">
+                                        <i data-feather="clipboard" class="Dashboard-Sidebar-Folders-Item-Documents-Icon"></i>
+                                        <a href="#" class="Dashboard-Sidebar-Folders-Item-Documents-Link">Document 1</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Buttons -->
+                <div class="Dashboard-Sidebar-Big">
+                    <div class="Dashboard-Sidebar-Big-Buttons">
+                        <button id="BtnNewDoc" class="Dashboard-Sidebar-Big-Buttons-Item">
+                            <i data-feather="plus" class="Dashboard-Sidebar-Big-Buttons-Icon"></i>
+                            <h3 class="Dashboard-Sidebar-Big-Buttons-Text">New Doc</h3>
+                        </button>
+                        <button id="BtnImportDoc" class="Dashboard-Sidebar-Big-Buttons-Item">
+                            <i data-feather="download" class="Dashboard-Sidebar-Big-Buttons-Icon"></i>
+                            <h3 class="Dashboard-Sidebar-Big-Buttons-Text">Import Doc</h3>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Main Content -->
+            <section class="Main-Content">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+            </section>
+        </div>
+    </form>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

@@ -93,6 +93,7 @@
     <Content Include="Pages\Images\NootBook.png" />
     <Content Include="Pages\Styles\Home.css" />
     <Content Include="Pages\Styles\Home.Master.css" />
+    <Content Include="Pages\Styles\Workspace.Master.css" />
     <Content Include="Views\Document Page\DocumentPage.aspx" />
     <Content Include="Views\Document Page\DocumentPage.css" />
     <Content Include="Views\Home\HomePage.aspx" />

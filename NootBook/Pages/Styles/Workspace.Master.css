@@ -1,0 +1,392 @@
+﻿:root {
+    --main: #FEFFDE;
+    --text-box: #9ACF91;
+    --lighter-box: #A9D6A1;
+    --button: #91C788;
+    --lighter-button: #668F60;
+    --darker-button: #476442;
+    --side: #9ACF91;
+    --font: #121212;
+    --separator: #DBDBDB;
+    --space: #C5E3C0;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: Inter, Roboto, Helvetica, Arial, sans-serif;
+    padding-top: 65px;
+    height: 100%;
+    margin: 0;
+}
+
+.Content-Sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: calc(100vh - (65px));
+}
+
+.Main-Content {
+    height: calc(100vh - (65px));
+    flex-grow: 1;
+    padding-left: 15rem;
+}
+
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1rem 1.5rem;
+    background-color: var(--main);
+    border-bottom: 1px solid var(--separator);
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    z-index: 1000;
+}
+
+.NavBar-Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.NavBar-Menu-List-Left,
+.NavBar-Menu-List-Right {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.NavBar-Menu-Item,
+.NavBar-Menu-Item-Special {
+    margin-left: 1rem;
+}
+
+.NavBar-Menu-Link {
+    color: var(--font);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0.5rem 1.25rem;
+    border-radius: 7.5px;
+}
+
+.NavBar-Menu-Image {
+    height: 30px;
+}
+
+.NavBar-Menu-Item-Special a {
+    background-color: var(--button);
+    color: var(--main);
+    padding: 0.5rem 1.25rem;
+    border-radius: 30px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.NavBar-Menu-Item a:hover {
+    border-color: rgba(0, 0, 0, 0.25);
+    color: var(--font);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.NavBar-Menu-Item-Special a:hover {
+    background-color: var(--lighter-button);
+}
+
+.NavBar-Menu-Item-Special a:active {
+    background-color: var(--darker-button);
+}
+
+.NavBar-Menu-Search {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--text-box);
+    border-radius: 20px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    padding: 0.25rem 0.75rem;
+    width: 40%;
+}
+
+.NavBar-Menu-Search-Button {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--lighter-box);
+    width: 24px;
+    height: 24px;
+}
+
+.NavBar-Menu-Search-Button-Icon {
+    color: var(--main);
+    width: 24px;
+    height: 24px;
+}
+
+.NavBar-Menu-Search-Input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    color: var(--main);
+    padding: 0.25rem 0.5rem;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.NavBar-Menu-Search-Input::placeholder {
+    color: var(--main);
+}
+
+.Dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
+    width: 15rem;
+    height: calc(100vh - (65px));
+    background-color: var(--main);
+    border-right: 1px solid var(--separator);
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-color: var(--darker-button) var(--space);
+    scrollbar-width: thin;
+}
+
+.Dashboard-Sidebar {
+    height: calc(100vh - (65px));
+    width: 100%;
+}
+
+.Dashboard-Sidebar-Buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.Dashboard-Sidebar-Menu-Button {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--button);
+    width: 30px;
+    height: 30px;
+}
+
+.Dashboard-Sidebar-Menu-Button-Icon {
+    color: var(--main);
+    width: 30px;
+    height: 30px;
+}
+
+.Dashboard-Sidebar-Menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+}
+
+.Dashboard-Sidebar-Menu-Item {
+    display: flex;
+    align-items: center;
+}
+
+.Dashboard-Sidebar-Menu-Item-Button {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--button);
+    width: 30px;
+    height: 30px;
+}
+
+.Dashboard-Sidebar-Menu-Item-Icon {
+    color: var(--main);
+    width: 24px;
+    height: 24px;
+}
+
+.Dashboard-Sidebar-Menu-Item-Link {
+    color: var(--font);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0.5rem 1.25rem;
+    border-radius: 7.5px;
+}
+
+.Dashboard-Sidebar-Favorites {
+    margin-top: 1rem;
+}
+
+.Dashboard-Sidebar-Favorites-Title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.Dashboard-Sidebar-Favorites-Title-Text {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.4;
+    font-weight: 700;
+}
+
+.Dashboard-Sidebar-Favorites-Title-Button {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--button);
+    width: 24px;
+    height: 24px;
+}
+
+.Dashboard-Sidebar-Favorites-Title-Icon {
+    color: var(--main);
+    width: 24px;
+    height: 24px;
+}
+
+.Dashboard-Sidebar-Favorites-List {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.Dashboard-Sidebar-Favorites-Item-Link {
+    color: var(--font);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0.5rem;
+    border-radius: 7.5px;
+}
+
+.Dashboard-Sidebar-Folders {
+    margin-top: 1rem;
+}
+
+.Dashboard-Sidebar-Folders-Title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.Dashboard-Sidebar-Folders-Title-Text {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.4;
+    font-weight: 700;
+}
+
+.Dashboard-Sidebar-Folders-Title-Button {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--button);
+    width: 24px;
+    height: 24px;
+}
+
+.Dashboard-Sidebar-Folders-Title-Icon {
+    color: var(--main);
+    width: 24px;
+    height: 24px;
+}
+
+.Dashboard-Sidebar-Folders-List {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+}
+
+.Dashboard-Sidebar-Folders-Item {
+    margin-bottom: 0.5rem;
+}
+
+.Dashboard-Sidebar-Folders-Item-Link {
+    color: var(--font);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0.5rem;
+    border-radius: 7.5px;
+}
+
+.Dashboard-Sidebar-Folders-Item-Documents {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5rem 1.75rem;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.Dashboard-Sidebar-Folders-Item-Documents-Link {
+    color: var(--font);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0.5rem;
+    border-radius: 7.5px;
+}
+
+.Dashboard-Sidebar-Big-Buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    bottom: 0;
+}
+
+.Dashboard-Sidebar-Big-Buttons-Item {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    padding: 0.5rem;
+    border-radius: 7.5px;
+    background-color: var(--button);
+    color: var(--main);
+    transition: 0.3s ease;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.Dashboard-Sidebar-Big-Buttons-Icon {
+    margin-right: 0.5rem;
+}
+
+.Dashboard-Sidebar-Big-Buttons-Text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
