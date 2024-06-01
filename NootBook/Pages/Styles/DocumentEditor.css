@@ -1,0 +1,13 @@
+﻿:root {
+    --main-content: #FEFFE5;
+}
+
+body {
+    background-color: var(--main-content);
+}
+
+.ck-editor__editable_inline {
+    background-color: #FEFFE5;
+    min-height: calc(100vh - (75px));
+    max-height: calc(100vh - (75px));
+}
