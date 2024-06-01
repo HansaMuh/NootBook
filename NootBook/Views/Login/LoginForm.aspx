@@ -49,7 +49,7 @@
             </div>
 
             <div class="buttoncontainer">
-                <a class="signin-button" href="../Register/RegisterForm.aspx">Sign In</a>
+                <a class="signin-button" href="../Projek%20Kelompok%206/ProjekKel6.aspx">Sign In</a>
                 <span class="separator">|</span>
                 <a class="signup-button" href="../Register/RegisterForm.aspx">Sign Up</a>
             </div>
@@ -74,7 +74,7 @@
             document.body.classList.add('fade-out');
 
             setTimeout(function () {
-                window.location.href = "../Register/RegisterForm.aspx";
+                window.location.href = "../Projek%20Kelompok%206/ProjekKel6.aspx";
             }, 500);
         });
     </script>
