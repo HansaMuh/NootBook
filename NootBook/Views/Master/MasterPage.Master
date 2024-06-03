@@ -26,12 +26,12 @@
                 </a>
                 <span>NOOTBOOK</span>
             </div> -->
-            <a href="#" class="logo">
+            <a href="../IntroductionPage/IntroductionPage.aspx" class="logo">
                 <img src="../../Picture/Logo%20Image.png" width="186" height="48"/>
             </a>
 
             <div class="searchbar">
-                <a href="#"><i class="icon" data-feather="search"></i></a>
+                <a href="#"><i class="bi bi-search"></i></a>
                 <input type="search" placeholder="Search your note..."/>
             </div>
 
@@ -41,7 +41,9 @@
                 </div>
                 <div class="profileTxt">
                     <div class="Name-prof">
-                        <asp:Label ID="ProfileName" runat="server" Text="SAPI DERMEN"></asp:Label>
+                        <a href="../Profile/Profile.aspx">
+                            <asp:Label ID="ProfileName" runat="server" Text="SAPI DERMEN"></asp:Label>
+                        </a>
                         <i class="bi bi-pencil-square"></i>
                     </div>
                     <i class="bi bi-gem"></i>
@@ -51,16 +53,16 @@
 
         <section class="dashboard">
             <div class="sidebar">
-                <p>Workspace</p>
-                <div class="workspace">
-                    <img class="wspicture" src="../../Picture/WorkSpace%20Picture.jpeg" />
-                    <h2>Workspace_1</h2>
-                </div>
-
                 <section class="sidebar-menu">
+                    <p>Workspace</p>
+                    <div class="workspace">
+                        <img class="wspicture" src="../../Picture/WorkSpace%20Picture.jpeg" />
+                        <h2>Workspace_1</h2>
+                    </div>
+
                     <div class="main">
                         <div class="document">
-                            <a href="#" class="allDocument"><i class="bi bi-folder-fill"></i>All Document</a>
+                            <a href="../Document%20Page/DocumentPage.aspx" class="allDocument"><i class="bi bi-folder-fill"></i>All Document</a>
                         </div>
                          <div class="journal">
                             <a href="#" class="journals"><i class="bi bi-calendar-fill"></i>Journals</a>
@@ -69,10 +71,9 @@
                             <a href="#" class="settings"><i class="bi bi-gear-fill"></i>Settings</a>
                         </div>
                         <div class="sticky-note">
-                            <a href="#" class="stickyNotes"><i class="bi bi-stickies-fill"></i>Sticky Notes</a>
+                            <a href="../StickyPage/StickyNotesPage.aspx" class="stickyNotes"><i class="bi bi-stickies-fill"></i>Sticky Notes</a>
                         </div>
                     </div>
-
                     <div class="favorites">
                         <div class="header">
                             <p>Favorites</p>
@@ -83,7 +84,6 @@
                             <a href="#" class="goldenRules"><i class="bi bi-file-earmark-text-fill"></i>Golden Rules</a>
                         </div>
                     </div>
-
                     <div class ="collections">
                         <div class="header">
                             <p>Collections</p>
@@ -98,12 +98,14 @@
                     </div>
                 </section>
             </div>
+                <section class="sidebar-btn">
+                    <div class="dashboardBtn">
+                        <button class="btn"><i class="bi bi-plus-lg"></i>New Doc</button>
+                        <button class="btn" type="button" onclick="openPopup()"><i class="bi bi-box-arrow-in-right"></i>Import Doc</button>
+                    </div>
+                </section>
+            
         </section>
-
-        <footer class="dashboardBtn">   
-            <button class="btn"><i class="bi bi-plus-lg"></i>New Doc</button>
-            <button class="btn" type="button" onclick="openPopup()"><i class="bi bi-box-arrow-in-right"></i>New Doc</button>
-        </footer>
 
         <div class="content">           
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

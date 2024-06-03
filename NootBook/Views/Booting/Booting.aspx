@@ -27,7 +27,7 @@
         setTimeout(function () {
             document.body.classList.add('fade-out');
             setTimeout(function () {
-                window.location.href = '../Login/LoginForm.aspx';
+                window.location.href = '../IntroductionPage/IntroductionPage.aspx';
             }, 1000);
         }, 12000);
     </script>
