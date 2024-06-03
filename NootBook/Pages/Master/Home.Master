@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="NootBook.Pages.Master.Home" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>NootBook</title>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" />
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="../Styles/Home.Master.css" />
+</head>
+<body>
+    <form id="Form_Main" runat="server">
+        <!-- Header -->
+        <nav class="NavBar">
+            <div class="NavBar-Container">
+                <!-- Left side -->
+                <ul class="NavBar-Menu-List-Left">
+                    <li class="NavBar-Menu-Item-Image"><a href="#" class="NavBar-Menu-Link"><asp:Image runat="server" ImageUrl="../Images/NootBook.png" alt="NootBook Logo" class="NavBar-Menu-Image" /></a></li>
+                    <li class="NavBar-Menu-Item" style="display: none;"><a href="../About.aspx" class="NavBar-Menu-Link">About</a></li>
+                </ul>
+                <!-- Right side -->
+                <ul class="NavBar-Menu-List-Right">
+                    <li class="NavBar-Menu-Item-Special"><a href="../DocumentEditor.aspx" class="NavBar-Menu-Link">Get Started</a></li>
+                    <li class="NavBar-Menu-Item-Special" style="display: none;"><a href="../Login.aspx" class="NavBar-Menu-Link">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="Main-Content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <nav class="Footer-Nav">
+                <div class="Footer-Nav-Container">
+                    <div class="Footer-Nav-Logo">
+                        <asp:Image runat="server" ImageUrl="../Images/NootBook.png" alt="NootBook Logo" class="Footer-Nav-Logo-Image" />
+                    </div>
+                    <div class="Footer-Nav-Content">
+                        <ul class="Footer-Nav-Links">
+                            <li class="Footer-Nav-Link-Item"><a href="../DocumentEditor.aspx">Workspace</a></li>
+                            <li class="Footer-Nav-Link-Item"><a href="#">Home</a></li>
+                            <li class="Footer-Nav-Link-Item" style="display: none;"><a href="../About.aspx">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="Footer-Nav-Extra">
+                        <h1 class="Footer-Nav-Copyright">
+                            &copy; 2024 NootBook.
+                        </h1>
+                    </div>
+                </div>
+            </nav>
+        </footer>
+    </form>
+</body>
+</html>
