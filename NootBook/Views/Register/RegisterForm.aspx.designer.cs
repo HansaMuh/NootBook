@@ -15,24 +15,6 @@ namespace NootBook.Views.Register
     {
 
         /// <summary>
-        /// emailid control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label emailid;
-
-        /// <summary>
-        /// hpid control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label hpid;
-
-        /// <summary>
         /// namaId control.
         /// </summary>
         /// <remarks>
@@ -42,6 +24,15 @@ namespace NootBook.Views.Register
         protected global::System.Web.UI.WebControls.Label namaId;
 
         /// <summary>
+        /// emailid control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label emailid;
+
+        /// <summary>
         /// PassId control.
         /// </summary>
         /// <remarks>
@@ -49,5 +40,14 @@ namespace NootBook.Views.Register
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label PassId;
+
+        /// <summary>
+        /// ConfirmPassId control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ConfirmPassId;
     }
 }

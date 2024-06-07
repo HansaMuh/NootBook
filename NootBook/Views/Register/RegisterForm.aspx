@@ -34,18 +34,13 @@
     <form id="Login-form">
 
         <div class="Form-Group">
-            <asp:Label ID="emailid" runat="server" Text="Email"></asp:Label>
-            <input id="EMID" type="email" />
-        </div>
-
-        <div class="Form-Group">
-            <asp:Label ID="hpid" runat="server" Text="NoHp"></asp:Label>
-            <input id="PHID" type="text" />
-        </div>
-
-        <div class="Form-Group">
             <asp:Label ID="namaId" runat="server" Text="Username"></asp:Label>
             <input id="NMID" type="text" />
+        </div>
+
+        <div class="Form-Group">
+            <asp:Label ID="emailid" runat="server" Text="Email"></asp:Label>
+            <input id="EMID" type="email" />
         </div>
 
         <div class="Form-Group">
@@ -53,8 +48,16 @@
             <input id="InputPassID" type="password" />
         </div>
 
+         <div class="Form-Group">
+            <asp:Label ID="ConfirmPassId" runat="server" Text="Confirm Password"></asp:Label>
+            <input id="InputConfirmPassID" type="password" /<div class="Form-Group">
+        </div>
+
         <div class="buttoncontainer">
-            <a class="signin-button" href="../Login/LoginForm.aspx">Sign In</a>
+            <a class="signin-button" href="../Home/HomePage.aspx">Sign Up</a>
+        </div>
+        <div class="buttoncontainer">
+            <a class="signin-button" href="../Login/LoginForm.aspx">Return to Sign In</a>
         </div>
     </form>
 </section>
