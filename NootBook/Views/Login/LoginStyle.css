@@ -120,13 +120,10 @@ h1.Secondtext {
     .login
     .Form-Group input[type="email"],
     .Form-Group input[type="password"] {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding: 0.5rem 1.5rem;
         border-radius: 30px;
         background-color: #91C788;
         border: none;
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
         width: 500px;
         font-size: 1.5rem;
     }
@@ -159,6 +156,7 @@ h1.Secondtext {
     color: #52734D;
     margin-right: 10px;
     text-decoration: none;
+    background-color: transparent;
 }
 
 .separator {

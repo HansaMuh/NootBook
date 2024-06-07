@@ -31,33 +31,63 @@
                 NOOTBOOK
             </h1>
         </div>
-        <form id="Login-form">
+        <form id="LoginForm" runat="server">
 
             <div class="Form-Group">
                 <asp:Label ID="InputId" runat="server" Text="Email"></asp:Label>
-                <input id="EHPID" type="email" />
+                <asp:TextBox ID="EmailTxt" runat="server" TextMode="Email" required="required"></asp:TextBox>
             </div>
             <div class="Form-Group">
                 <asp:Label ID="PassId" runat="server" Text="Password"></asp:Label>
-                <input id="InputPassID" type="password" />
+                <asp:TextBox ID="PasswordTxt" runat="server" TextMode="Password" required="required"></asp:TextBox>
             </div>
 
             <div class="Forgot">
-                <button class="Fbut">
+                <button class="Fbut" type="button">
                     Forgot Password
                 </button>
             </div>
 
             <div class="buttoncontainer">
-                <a class="signin-button" href="../Register/RegisterForm.aspx">Sign In</a>
+                <asp:Button ID="SignInButton" CssClass="signin-button" runat="server" Text="Sign In" OnClientClick="return onSignInClick();" OnClick="SignInButton_Click" />
                 <span class="separator">|</span>
-                <a class="signup-button" href="../Register/RegisterForm.aspx">Sign Up</a>
+                <a class="signup-button" href="#" onclick="return onSignUpClick();">Sign Up</a>
             </div>
+            <asp:Label ID="ErrorMessage" ForeColor="Red" runat="server" Text=""></asp:Label>
         </form>
     </section>
     <script>
-        document.querySelector('.signup-button').addEventListener('click', function (event) {
-            event.preventDefault();
+        let shouldSubmitForm = false;
+
+        function onSignInClick() {
+            if (shouldSubmitForm) {
+                return true; // Allow form submission
+            }
+
+            // Check if the email and password fields are valid using HTML5 validation
+            var emailInput = document.getElementById('<%= EmailTxt.ClientID %>');
+            var passwordInput = document.getElementById('<%= PasswordTxt.ClientID %>');
+
+            if (!emailInput.checkValidity() || !passwordInput.checkValidity()) {
+                // If email or password is invalid, show the browser's built-in validation message
+                emailInput.reportValidity();
+                passwordInput.reportValidity();
+                return false; // Prevent form submission
+            }
+
+            var gambar = document.querySelector('.Gambar img');
+            gambar.classList.add('move-out');
+            document.body.classList.add('fade-out');
+
+            setTimeout(function () {
+                shouldSubmitForm = true;
+                document.getElementById('<%= SignInButton.ClientID %>').click();
+            }, 500);
+
+            return false; // Prevent immediate form submission to allow animations
+        }
+
+        function onSignUpClick() {
             var gambar = document.querySelector('.Gambar img');
             gambar.classList.add('move-out');
             document.body.classList.add('fade-out');
@@ -65,18 +95,9 @@
             setTimeout(function () {
                 window.location.href = "../Register/RegisterForm.aspx";
             }, 500);
-        });
 
-        document.querySelector('.signin-button').addEventListener('click', function (event) {
-            event.preventDefault();
-            var gambar = document.querySelector('.Gambar img');
-            gambar.classList.add('move-out');
-            document.body.classList.add('fade-out');
-
-            setTimeout(function () {
-                window.location.href = "../Register/RegisterForm.aspx";
-            }, 500);
-        });
+            return false; // Prevent immediate navigation to allow animations
+        }
     </script>
 </body>
 </html>
