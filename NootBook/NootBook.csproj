@@ -128,9 +128,11 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Discontinued\Document.cs" />
     <Compile Include="Discontinued\Folder.cs" />
     <Compile Include="Discontinued\User.cs" />
+    <Compile Include="Handlers\UserHandler.cs" />
     <Compile Include="Models\Document.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
@@ -155,6 +157,7 @@
     <Compile Include="Models\User.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Response.cs" />
     <Compile Include="Pages\DocumentEditor.aspx.cs">
       <DependentUpon>DocumentEditor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -191,7 +194,12 @@
       <DependentUpon>Workspace.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\DatabaseSingleton.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="Utility\Enumerations\UserRoleType.cs" />
+    <Compile Include="Views\Base\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Views\Booting\Booting.aspx.cs">
       <DependentUpon>Booting.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
