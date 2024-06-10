@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NootBook.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,9 @@ namespace NootBook.Views.Master
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            User user = Session["user"] as User;
 
+            ProfileName.Text = user.Name;
         }
     }
 }

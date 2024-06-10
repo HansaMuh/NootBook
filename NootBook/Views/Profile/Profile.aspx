@@ -22,7 +22,7 @@
                 </div>
                 <div class="profile-bottom">
                     <asp:Button CssClass="botBtn" ID="changeBtn" runat="server" Text="Change Password" />
-                    <asp:Button CssClass="botBtn" ID="logoutBtn" runat="server" Text="Log Out" />
+                    <asp:Button CssClass="botBtn" ID="logoutBtn" runat="server" Text="Log Out" OnClick="logoutBtn_Click"/>
                 </div>
             </div>
 
@@ -30,26 +30,26 @@
                 <h2>Information</h2>
                 <div class="Name-prof"">
                    <span>name</span>
-                   <span>:</span>
-                   <asp:Label ID="Label1" runat="server" Text="Sapi Dermen"></asp:Label>
+                   <span>: </span>
+                   <asp:Label ID="NameLbl" runat="server" Text="Name"></asp:Label>
                    <i class="bi bi-pencil-square"></i>
+                </div>
+                <div class="Email-prof">
+                    <span>Email</span>
+                    <span>: </span>
+                    <asp:Label ID="EmailLbl" runat="server" Text=""></asp:Label>
+                    <i class="bi bi-pencil-square"></i>
                 </div>
                 <div class="Age-prof">
                     <span>age</span>
-                    <span>:</span>
-                    <asp:Label ID="Label2" runat="server" Text="-"></asp:Label>
+                    <span>: </span>
+                    <asp:Label ID="Label2" runat="server" Text="21"></asp:Label>
                     <i class="bi bi-pencil-square"></i>                
                 </div>
                 <div class="Phone-prof">
                     <span>Phone</span>
-                    <span>:</span>
-                    <asp:Label ID="Label3" runat="server" Text="6666666666"></asp:Label>
-                    <i class="bi bi-pencil-square"></i>
-                </div>
-                <div class="Email-prof">
-                    <span>Email</span>
-                    <span>:</span>
-                    <asp:Label ID="Label4" runat="server" Text="sapidermen@gmail.com"></asp:Label>
+                    <span>: </span>
+                    <asp:Label ID="Label3" runat="server" Text="+62 82910938187"></asp:Label>
                     <i class="bi bi-pencil-square"></i>
                 </div>
             </div>

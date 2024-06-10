@@ -31,47 +31,71 @@
             Nootbook
         </h1>
     </div>
-    <form id="Login-form">
+    <form runat="server">
 
         <div class="Form-Group">
-            <asp:Label ID="namaId" runat="server" Text="Username"></asp:Label>
-            <input id="NMID" type="text" />
+            <asp:Label ID="NameLbl" runat="server" Text="Name"></asp:Label>
+            <asp:TextBox ID="NameTxt" runat="server" required="required"></asp:TextBox>
         </div>
 
         <div class="Form-Group">
-            <asp:Label ID="emailid" runat="server" Text="Email"></asp:Label>
-            <input id="EMID" type="email" />
+            <asp:Label ID="EmailLbl" runat="server" Text="Email"></asp:Label>
+            <asp:TextBox ID="EmailTxt" runat="server" TextMode="Email" required="required"></asp:TextBox>
         </div>
 
         <div class="Form-Group">
-            <asp:Label ID="PassId" runat="server" Text="Password"></asp:Label>
-            <input id="InputPassID" type="password" />
+            <asp:Label ID="PassLbl" runat="server" Text="Password"></asp:Label>
+            <asp:TextBox ID="PasswordTxt" runat="server" TextMode="Password" required="required"></asp:TextBox>
         </div>
 
          <div class="Form-Group">
-            <asp:Label ID="ConfirmPassId" runat="server" Text="Confirm Password"></asp:Label>
-            <input id="InputConfirmPassID" type="password" /<div class="Form-Group">
+            <asp:Label ID="ConfirmPassLbl" runat="server" Text="Confirm Password"></asp:Label>
+            <asp:TextBox ID="ConfirmPassTxt" runat="server" TextMode="Password" required="required"></asp:TextBox>
         </div>
 
         <div class="buttoncontainer">
-            <a class="signin-button" href="../Home/HomePage.aspx">Sign Up</a>
+             <asp:Button ID="SignUpButton" CssClass="signin-button" runat="server" Text="Sign Up" OnClientClick="return onSignUpClick();" OnClick="SignUpButton_Click" />
         </div>
         <div class="buttoncontainer">
             <a class="signin-button" href="../Login/LoginForm.aspx">Return to Sign In</a>
         </div>
+        <asp:Label ID="ErrorMessage" ForeColor="Red" runat="server" Text=""></asp:Label>
     </form>
 </section>
 <script>
-    document.querySelector('.signin-button').addEventListener('click', function (event) {
-        event.preventDefault();
+    let shouldSubmitForm = false;
+
+    function onSignUpClick() {
+        if (shouldSubmitForm) {
+            return true; // Allow form submission
+        }
+
+        // Check if the email and password fields are valid using HTML5 validation
+        var usernameInput = document.getElementById('<%= NameTxt.ClientID %>');
+        var emailInput = document.getElementById('<%= EmailTxt.ClientID %>');
+        var passwordInput = document.getElementById('<%= PasswordTxt.ClientID %>');
+        var confirmPasswordInput = document.getElementById('<%= ConfirmPassTxt.ClientID %>');
+
+        if (!usernameInput.checkValidity() || !emailInput.checkValidity() || !passwordInput.checkValidity() || !confirmPasswordInput.checkValidity() {
+            // If email or password is invalid, show the browser's built-in validation message
+            usernameInput.reportValidity();
+            emailInput.reportValidity();
+            passwordInput.reportValidity();
+            confirmPasswordInput.reportValidity();
+            return false; // Prevent form submission
+        }
+
         var gambar = document.querySelector('.Gambar img');
         gambar.classList.add('move-out');
         document.body.classList.add('fade-out');
 
         setTimeout(function () {
-            window.location.href = "../Login/LoginForm.aspx";
+            shouldSubmitForm = true;
+            document.getElementById('<%= SignUpButton.ClientID %>').click();
         }, 500);
-    });
+
+        return false; // Prevent immediate form submission to allow animations
+    }
 </script>
 </body>
 </html>

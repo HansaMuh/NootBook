@@ -132,6 +132,7 @@
     <Compile Include="Discontinued\Document.cs" />
     <Compile Include="Discontinued\Folder.cs" />
     <Compile Include="Discontinued\User.cs" />
+    <Compile Include="Factories\UserFactory.cs" />
     <Compile Include="Handlers\UserHandler.cs" />
     <Compile Include="Models\Document.cs">
       <DependentUpon>Model.tt</DependentUpon>
