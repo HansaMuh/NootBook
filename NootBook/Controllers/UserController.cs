@@ -21,7 +21,49 @@ namespace NootBook.Controllers
                     Payload = null
                 };
             }
+
+            if (!email.EndsWith(".com"))
+            {
+                return new Response<User>()
+                {
+                    Success = false,
+                    Message = "Email must ends with '.com'.",
+                    Payload = null
+                };
+            }
+
+
             return UserHandler.LoginUser(email, password);
+        }
+
+        public static Response<User> RegisterUser(string name, string email, string password, string confirmPassword)
+        {
+            string errorMsg = string.Empty;
+
+            if (name == string.Empty || email == string.Empty || password == string.Empty || confirmPassword == string.Empty)
+            {
+                errorMsg = "All fields are required to befilled.";
+            }
+            else if (!email.EndsWith(".com"))
+            {
+                errorMsg = "Email must ends with '.com'.";
+            }
+            else if (password != confirmPassword)
+            {
+                errorMsg = "Password must be the same with the confirm password.";
+            }
+
+            if (!errorMsg.Equals(string.Empty))
+            {
+                return new Response<User>()
+                {
+                    Success = false,
+                    Message = errorMsg,
+                    Payload = null
+                };
+            }
+
+            return UserHandler.RegisterUser(name, email, password, confirmPassword);
         }
     }
 }

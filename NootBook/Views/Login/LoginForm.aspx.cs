@@ -8,7 +8,10 @@ namespace NootBook.Views.Login
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // We no longer need this check because the __doPostBack call will handle this
+            if (Session["user"] != null)
+            {
+                Response.Redirect("~/Views/Home/HomePage.aspx");
+            }
         }
 
         protected void SignInButton_Click(object sender, EventArgs e)

@@ -65,7 +65,7 @@ body {
 
 .login {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -123,13 +123,10 @@ h1.Secondtext {
     .Form-Group input[type="text"],
     .Form-Group input[type="text"],
     .Form-Group input[type="password"] {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding: 0.5rem 1.5rem;
         border-radius: 30px;
         background-color: #91C788;
         border: none;
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
         width: 500px;
         font-size: 1.5rem;
     }

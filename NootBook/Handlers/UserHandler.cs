@@ -1,4 +1,5 @@
-﻿using NootBook.Models;
+﻿using NootBook.Factories;
+using NootBook.Models;
 using NootBook.Modules;
 using NootBook.Repositories;
 using System;
@@ -19,7 +20,7 @@ namespace NootBook.Handlers
                 return new Response<User>
                 {
                     Success = false,
-                    Message = "There is no user with that username.",
+                    Message = "There is no user with that email.",
                     Payload = null
                 };
             }
@@ -38,6 +39,52 @@ namespace NootBook.Handlers
             {
                 Success = true,
                 Message = "Successfully login.",
+                Payload = user
+            };
+        }
+
+        public static Response<User> RegisterUser(string name, string email, string password, string confirmPassword)
+        {
+            User searchedUser = UserRepository.GetUserByUsername(name);
+
+            if (searchedUser != null)
+            {
+                return new Response<User>
+                {
+                    Success = false,
+                    Message = "Username already exists.",
+                    Payload = null
+                };
+            }
+
+            User searchedEmail = UserRepository.GetUserByEmail(email);
+
+            if (searchedEmail != null)
+            {
+                return new Response<User>
+                {
+                    Success = false,
+                    Message = "Another user has already used that email.",
+                    Payload = null
+                };
+            }
+
+            User user = UserFactory.createUser(name, email, password, "Guest");
+            bool isCreated = UserRepository.CreateUser(user);
+
+            if (!isCreated)
+            {
+                return new Response<User>
+                {
+                    Success = false,
+                    Message = "Failed to register user.",
+                    Payload = null
+                };
+            }
+            return new Response<User>
+            {
+                Success = true,
+                Message = "Successfully register user.",
                 Payload = user
             };
         }
