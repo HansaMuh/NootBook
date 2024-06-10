@@ -42,13 +42,22 @@ namespace NootBook.Views.Profile
         protected global::System.Web.UI.WebControls.Button logoutBtn;
 
         /// <summary>
-        /// Label1 control.
+        /// NameLbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label NameLbl;
+
+        /// <summary>
+        /// EmailLbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label EmailLbl;
 
         /// <summary>
         /// Label2 control.
@@ -67,14 +76,5 @@ namespace NootBook.Views.Profile
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label3;
-
-        /// <summary>
-        /// Label4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label4;
     }
 }

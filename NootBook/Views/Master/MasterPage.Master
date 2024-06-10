@@ -41,8 +41,10 @@
                 </div>
                 <div class="profileTxt">
                     <div class="Name-prof">
-                        <asp:Label ID="ProfileName" runat="server" Text="SAPI DERMEN"></asp:Label>
-                        <i class="bi bi-pencil-square"></i>
+                        <asp:Label ID="ProfileName" runat="server" Text=""></asp:Label>
+                        <a href="../Profile/Profile.aspx">
+                            <i class="bi bi-pencil-square"></i>
+                        </a>
                     </div>
                     <i class="bi bi-gem"></i>
                 </div>               
