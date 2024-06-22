@@ -24,8 +24,6 @@
 }
 
 .tambah {
-    margin-top: 4rem;
-    margin-bottom: -9.5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -34,10 +32,10 @@
     border-radius: 13px;
     border: 1px solid #91C788;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 12.5rem;
-    height: 12.5rem;
+    width: 4rem;
+    height: 4rem;
     cursor: pointer;
-    font-size: 125px;
+    font-size: 3rem;
     color: #91C788;
     transition: background-color 0.5s, border 0.5s, color 0.5s;
 }
@@ -62,8 +60,6 @@
     border-radius: 23px;
     flex-wrap: wrap;
     margin-left: 0.5rem;
-    margin-top: 13.5rem;
-    margin-bottom: -13rem;
 }
 
 .note-container {
@@ -73,6 +69,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+    margin-top: 2rem;
 }
 
 .note-judul {
