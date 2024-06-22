@@ -12,9 +12,9 @@ namespace NootBook.Views.Master
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            User user = Session["user"] as User;
+            //User user = Session["user"] as User;
 
-            ProfileName.Text = user.Name;
+            //ProfileName.Text = user.Name;
         }
     }
 }

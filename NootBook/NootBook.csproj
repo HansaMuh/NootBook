@@ -87,16 +87,18 @@
       <DependentUpon>Model.edmx</DependentUpon>
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
+    <Content Include="Pages\TemplateDocumentEditor.aspx" />
     <Content Include="Pages\DocumentEditor.aspx" />
     <Content Include="Pages\Dummy.aspx" />
     <Content Include="Pages\Home.aspx" />
     <Content Include="Pages\Images\NootBook_Logo.png" />
     <Content Include="Pages\Images\NootBook.png" />
     <Content Include="Pages\Javascripts\CKEditor.js" />
-    <Content Include="Pages\Styles\DocumentEditor.css" />
+    <Content Include="Pages\Javascripts\ogCKEditor.js" />
     <Content Include="Pages\Styles\Home.css" />
     <Content Include="Pages\Styles\Home.Master.css" />
     <Content Include="Pages\Styles\Workspace.Master.css" />
+    <Content Include="Pages\Workspace.aspx" />
     <Content Include="Views\Document Page\DocumentPage.aspx" />
     <Content Include="Views\Document Page\DocumentPage.css" />
     <Content Include="Views\Home\HomePage.aspx" />
@@ -159,6 +161,13 @@
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Modules\Response.cs" />
+    <Compile Include="Pages\TemplateDocumentEditor.aspx.cs">
+      <DependentUpon>TemplateDocumentEditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TemplateDocumentEditor.aspx.designer.cs">
+      <DependentUpon>TemplateDocumentEditor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\DocumentEditor.aspx.cs">
       <DependentUpon>DocumentEditor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -193,6 +202,13 @@
     </Compile>
     <Compile Include="Pages\Master\Workspace.Master.designer.cs">
       <DependentUpon>Workspace.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Workspace.aspx.cs">
+      <DependentUpon>Workspace.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Workspace.aspx.designer.cs">
+      <DependentUpon>Workspace.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\DatabaseSingleton.cs" />

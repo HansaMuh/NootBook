@@ -6,7 +6,7 @@
     --lighter-button: #668F60;
     --darker-button: #476442;
     --side: #9ACF91;
-    --font: #121212;
+    --font: #25471F;
     --separator: #DBDBDB;
     --space: #C5E3C0;
 }
@@ -129,6 +129,15 @@ body {
     background-color: var(--lighter-box);
     width: 24px;
     height: 24px;
+    transition: 0.3s ease;
+}
+
+.NavBar-Menu-Search-Button:hover {
+    opacity: 0.75;
+}
+
+.NavBar-Menu-Search-Button:active {
+    opacity: 0.50;
 }
 
 .NavBar-Menu-Search-Button-Icon {
@@ -360,18 +369,22 @@ body {
     border-radius: 7.5px;
 }
 
+.Dashboard-Sidebar-Big {
+    width: 100%;
+}
+
 .Dashboard-Sidebar-Big-Buttons {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     bottom: 0;
 }
 
 .Dashboard-Sidebar-Big-Buttons-Item {
     display: flex;
     align-items: center;
-    justify-content: stretch;
+    justify-content: center;
     padding: 0.5rem;
     border-radius: 7.5px;
     background-color: var(--button);

@@ -49,6 +49,11 @@
                         <ul class="Footer-Nav-Links">
                             <li class="Footer-Nav-Link-Item"><a href="../Workspace.aspx">Workspace</a></li>
                             <li class="Footer-Nav-Link-Item"><a href="#">Home</a></li>
+                            <li class="Footer-Nav-Link-Item"><a href="../../Views/Register/RegisterForm.aspx">Register</a></li>
+                            <li class="Footer-Nav-Link-Item"><a href="../../Views/Login/LoginForm.aspx">Login</a></li>
+                            <li class="Footer-Nav-Link-Item"><a href="../../Views/Profile/Profile.aspx">Profile</a></li>
+                            <li class="Footer-Nav-Link-Item"><a href="../../Views/Document Page/DocumentPage.aspx">Your Documents</a></li>
+                            <li class="Footer-Nav-Link-Item"><a href="../../Views/StickyPage/StickyNotesPage.aspx">Your Sticky Notes</a></li>
                             <li class="Footer-Nav-Link-Item" style="display: none;"><a href="../About.aspx">About</a></li>
                         </ul>
                     </div>

@@ -40,18 +40,6 @@
                     <asp:Label ID="EmailLbl" runat="server" Text=""></asp:Label>
                     <i class="bi bi-pencil-square"></i>
                 </div>
-                <div class="Age-prof">
-                    <span>age</span>
-                    <span>: </span>
-                    <asp:Label ID="Label2" runat="server" Text="21"></asp:Label>
-                    <i class="bi bi-pencil-square"></i>                
-                </div>
-                <div class="Phone-prof">
-                    <span>Phone</span>
-                    <span>: </span>
-                    <asp:Label ID="Label3" runat="server" Text="+62 82910938187"></asp:Label>
-                    <i class="bi bi-pencil-square"></i>
-                </div>
             </div>
         </div>
     </div>

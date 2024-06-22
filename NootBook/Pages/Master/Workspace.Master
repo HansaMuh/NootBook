@@ -28,7 +28,7 @@
                             <i data-feather="sidebar" class="Dashboard-Sidebar-Menu-Button-Icon"></i>
                         </button>
                     </li>
-                    <li class="NavBar-Menu-Item-Image"><a href="#" class="NavBar-Menu-Link"><asp:Image runat="server" ImageUrl="../Images/NootBook.png" alt="NootBook Logo" class="NavBar-Menu-Image" /></a></li>
+                    <li class="NavBar-Menu-Item-Image"><a href="Home.aspx" class="NavBar-Menu-Link"><asp:Image runat="server" ImageUrl="../Images/NootBook.png" alt="NootBook Logo" class="NavBar-Menu-Image" /></a></li>
 <!--                    <li class="NavBar-Menu-Item" style="display: none;"><a href="../About.aspx" class="NavBar-Menu-Link">About</a></li> -->
                 </ul>
                 <!-- Middle side -->
@@ -74,7 +74,7 @@
                             </button>
                             <a href="../Folders.aspx" class="Dashboard-Sidebar-Menu-Item-Link">All folders</a>
                         </li> 
-                        <li class="Dashboard-Sidebar-Menu-Item">
+                        <li class="Dashboard-Sidebar-Menu-Item" style="display: none;">
                             <button class="Dashboard-Sidebar-Menu-Item-Button">
                                 <i data-feather="trash-2" class="Dashboard-Sidebar-Menu-Item-Icon"></i>
                             </button>
@@ -82,7 +82,7 @@
                         </li> 
                     </ul>
                     <!-- Favorites -->
-                    <div class="Dashboard-Sidebar-Favorites">
+                    <div class="Dashboard-Sidebar-Favorites" style="display: none;">
                         <div class="Dashboard-Sidebar-Favorites-Title">
                             <h2 class="Dashboard-Sidebar-Favorites-Title-Text">Favorites</h2>
                             <button id="BtnFavorites" class="Dashboard-Sidebar-Favorites-Title-Button">
@@ -97,7 +97,7 @@
                         </ul>
                     </div>
                     <!-- Folders -->
-                    <div class="Dashboard-Sidebar-Folders">
+                    <div class="Dashboard-Sidebar-Folders" style="display: none;">
                         <div class="Dashboard-Sidebar-Folders-Title">
                             <h2 class="Dashboard-Sidebar-Folders-Title-Text">Folders</h2>
                             <button id="BtnFolders" class="Dashboard-Sidebar-Folders-Title-Button">
@@ -122,13 +122,13 @@
                 <!-- Buttons -->
                 <div class="Dashboard-Sidebar-Big">
                     <div class="Dashboard-Sidebar-Big-Buttons">
-                        <button id="BtnNewDoc" class="Dashboard-Sidebar-Big-Buttons-Item">
+                        <button id="BtnNewDoc" class="Dashboard-Sidebar-Big-Buttons-Item" onclick="OnBtnNewDoc_Click()">
                             <i data-feather="plus" class="Dashboard-Sidebar-Big-Buttons-Icon"></i>
-                            <h3 class="Dashboard-Sidebar-Big-Buttons-Text">New Doc</h3>
+                            <h3 class="Dashboard-Sidebar-Big-Buttons-Text">New Document</h3>
                         </button>
-                        <button id="BtnImportDoc" class="Dashboard-Sidebar-Big-Buttons-Item">
+                        <button id="BtnImportDoc" class="Dashboard-Sidebar-Big-Buttons-Item" style="display: none;">
                             <i data-feather="download" class="Dashboard-Sidebar-Big-Buttons-Icon"></i>
-                            <h3 class="Dashboard-Sidebar-Big-Buttons-Text">Import Doc</h3>
+                            <h3 class="Dashboard-Sidebar-Big-Buttons-Text">Import Document</h3>
                         </button>
                     </div>
                 </div>
@@ -142,6 +142,10 @@
 
     <script>
         feather.replace();
+
+        function OnBtnNewDoc_Click() {
+            window.location.href = "DocumentEditor.aspx";
+        }
     </script>
 </body>
 </html>
