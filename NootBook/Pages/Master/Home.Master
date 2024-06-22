@@ -28,7 +28,7 @@
                 </ul>
                 <!-- Right side -->
                 <ul class="NavBar-Menu-List-Right">
-                    <li class="NavBar-Menu-Item-Special"><a href="../Workspace.aspx" class="NavBar-Menu-Link">Get Started</a></li>
+                    <li class="NavBar-Menu-Item-Special"><a href="Workspace.aspx" class="NavBar-Menu-Link">Get Started</a></li>
                     <li class="NavBar-Menu-Item-Special" style="display: none;"><a href="../Login.aspx" class="NavBar-Menu-Link">Login</a></li>
                 </ul>
             </div>

@@ -51,7 +51,7 @@
             <div class="buttoncontainer">
                 <asp:Button ID="SignInButton" CssClass="signin-button" runat="server" Text="Sign In" OnClientClick="return onSignInClick();" OnClick="SignInButton_Click" />
                 <span class="separator">|</span>
-                <a class="signup-button" href="#" onclick="return onSignUpClick();">Sign Up</a>
+                 <asp:Button ID="SignUpButton" class="signup-button" runat="server" Text="Sign Up" OnClientClick="return onSignInClick();" OnClick="SignUpButton_Click"/>
             </div>
             <asp:Label ID="ErrorMessage" ForeColor="Red" runat="server" Text=""></asp:Label>
         </form>
@@ -74,7 +74,6 @@
                 passwordInput.reportValidity();
                 return false; // Prevent form submission
             }
-
             var gambar = document.querySelector('.Gambar img');
             gambar.classList.add('move-out');
             document.body.classList.add('fade-out');
